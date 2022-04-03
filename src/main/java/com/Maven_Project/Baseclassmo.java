@@ -68,63 +68,63 @@ public class Baseclassmo {
 	}
 
 	public static void dropdown(String type, WebElement element,String value) {
-		
-	    try {
-	    	
-	    	Select s = new Select(element);
-	    	
-	    	if (type.equalsIgnoreCase("byvalue")) {
-				
-	    		s.selectByValue(value);
+
+		try {
+
+			Select s = new Select(element);
+
+			if (type.equalsIgnoreCase("byvalue")) {
+
+				s.selectByValue(value);
 			}
-	    	
-	    	else if (type.equalsIgnoreCase("bytext")) {
-	    		
-	    		s.selectByVisibleText(value);
-	    	}
-				
-		
-	    	else if (type.equalsIgnoreCase("byindex")) {
-	    		
-	    		int index = Integer.parseInt(value);
-	    		
-	    		s.selectByIndex(index);
-				
+
+			else if (type.equalsIgnoreCase("bytext")) {
+
+				s.selectByVisibleText(value);
 			}
-	    	
-	    } catch (Exception e) {
-		 e.printStackTrace();
-	    	
+
+
+			else if (type.equalsIgnoreCase("byindex")) {
+
+				int index = Integer.parseInt(value);
+
+				s.selectByIndex(index);
+
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+
 		}
 
-	
+
 	}
-	
-	
+
+
 	public static String  getdata(String path,int sheetindex,int rowindex,int cellindex)throws IOException{ 
-	
+
 		File f=new File(path);
 		FileInputStream fis=new FileInputStream(f);
 		Workbook wb=new XSSFWorkbook(fis);
-		
+
 		Sheet s= wb.getSheetAt(sheetindex);
 		Row r=s.getRow(rowindex);
-		
-	Cell c=r.getCell(cellindex);
-	CellType type=c.getCellType();
-	if (type.equals(CellType.STRING)) {
-		value= c.getStringCellValue();
-		
+
+		Cell c=r.getCell(cellindex);
+		CellType type=c.getCellType();
+		if (type.equals(CellType.STRING)) {
+			value= c.getStringCellValue();
+
 		}
-	else if (type.equals(CellType.NUMERIC)){
-		double cellvalue=c.getNumericCellValue();
-		int i=(int) cellvalue;
-		value=String.valueOf(i);
-		
-	  }
-	
-	return value;
+		else if (type.equals(CellType.NUMERIC)){
+			double cellvalue=c.getNumericCellValue();
+			int i=(int) cellvalue;
+			value=String.valueOf(i);
+
+		}
+
+		return value;
 	}
-	
+
 }
 

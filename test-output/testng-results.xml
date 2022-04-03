@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15961" started-at="2022-04-03T18:34:58 IST" finished-at="2022-04-03T18:35:14 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15961" started-at="2022-04-03T18:34:58 IST" finished-at="2022-04-03T18:35:14 IST">
+      <class name="com.Maven_Project1.AdactinRunnerwithtestNG">
+        <test-method status="PASS" signature="report_generation()[pri:0, instance:com.Maven_Project1.AdactinRunnerwithtestNG@16aa8654]" name="report_generation" is-config="true" duration-ms="312" started-at="2022-04-03T18:34:58 IST" finished-at="2022-04-03T18:34:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report_generation -->
+        <test-method status="PASS" signature="launch_url()[pri:0, instance:com.Maven_Project1.AdactinRunnerwithtestNG@16aa8654]" name="launch_url" is-config="true" duration-ms="6090" started-at="2022-04-03T18:34:59 IST" finished-at="2022-04-03T18:35:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_url -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.Maven_Project1.AdactinRunnerwithtestNG@16aa8654]" name="login" is-config="true" duration-ms="1407" started-at="2022-04-03T18:35:05 IST" finished-at="2022-04-03T18:35:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="hotel_book()[pri:0, instance:com.Maven_Project1.AdactinRunnerwithtestNG@16aa8654]" name="hotel_book" duration-ms="7608" started-at="2022-04-03T18:35:06 IST" finished-at="2022-04-03T18:35:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hotel_book -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:com.Maven_Project1.AdactinRunnerwithtestNG@16aa8654]" name="flush" is-config="true" duration-ms="461" started-at="2022-04-03T18:35:14 IST" finished-at="2022-04-03T18:35:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- com.Maven_Project1.AdactinRunnerwithtestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

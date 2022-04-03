@@ -1,14 +1,15 @@
 package com.Maven_Project1;
 
 
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 
 public class Adactinproject   extends Adactinbase {
 	public static WebDriver driver = browser_configuration("chrome");
-	public static Logger log=Logger.getLogger(Adactinproject.class );
-	
+
+	public static Logger log=Logger.getLogger(Adactinproject.class);
 	public static Adactinwithpomanager pom=new Adactinwithpomanager(driver);
 	public static void main(String[] args) throws Exception {
 
@@ -22,7 +23,7 @@ public class Adactinproject   extends Adactinbase {
 				getdata("C:\\Users\\Vignesh\\eclipse-workspace\\Maven_Project\\Testcases adactin.xlsx", 0, 3, 5));
 
 		clickonElement(pom.get_instance_ahp().getLogin());
-		log.info("successfull adactin");
+		log.info("successful login");
 
 		dropdown("byindex", pom.get_instance_nextpage().getLocation(), "6");
 
@@ -45,6 +46,7 @@ public class Adactinproject   extends Adactinbase {
 		dropdown("byvalue", pom.get_instance_nextpage().getChildroom(), "2");
 
 		clickonElement(pom.get_instance_nextpage().getSubmit());
+		
 		log.info("successful submit");
 
 		clickonElement(pom.get_instance_nextpage().getSelectbutton());
@@ -67,15 +69,12 @@ public class Adactinproject   extends Adactinbase {
 
 		inputvalueelement(pom.get_instance_nextpage2().getCvv(), "008");
 
-		fileutils("C:\\Users\\Vignesh\\eclipse-workspace\\Maven_Project\\screenshot\\picture.png");
-		log.info("successful scrrenshot");
+		log.info("successful process");
+		fileutils("C:\\\\Users\\\\PS\\\\eclipse-workspace\\\\Selenium\\\\Screenshot\\\\automation1.png");
+		
 
 		clickonElement(pom.get_instance_nextpage2().getBooking());
 
 	}
 
 }
-
-
-
-
